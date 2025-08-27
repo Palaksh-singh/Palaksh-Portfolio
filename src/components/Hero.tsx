@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Rocket, Send } from "lucide-react";
+import profileImage from "@/assets/profile.jpg";
 
 const Hero = () => {
   const [mounted, setMounted] = useState(false);
@@ -98,7 +99,7 @@ const Hero = () => {
           <div className="order-1 lg:order-2 flex justify-center items-center">
             <div className="relative profile-wrapper w-80 h-80 lg:w-[450px] lg:h-[450px] floating-animation">
               <img
-                src="/placeholder.svg"
+                src={profileImage}
                 alt="Palaksh Kumar - Web Developer"
                 className="w-full h-full object-cover border-4 border-transparent glow-animation morph-animation relative z-20"
                 style={{
