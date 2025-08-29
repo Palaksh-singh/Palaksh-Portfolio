@@ -6,28 +6,28 @@ const Contact = () => {
     {
       name: "Email",
       icon: Mail,
-      href: "mailto:palaksh@example.com",
-      label: "palaksh@example.com",
+      href: "mailto:palakshkumar866@gmail.com",
+      label: "palakshkumar866@gmail.com",
       color: "text-primary"
     },
     {
       name: "LinkedIn", 
       icon: Linkedin,
-      href: "https://linkedin.com/in/palaksh-kumar",
+      href: "https://www.linkedin.com/in/palaksh-kumar-584674346/",
       label: "Connect with me",
       color: "text-blue-400"
     },
     {
       name: "GitHub",
       icon: Github, 
-      href: "https://github.com/palaksh-kumar",
+      href: "https://github.com/Palaksh-singh",
       label: "View my code",
       color: "text-foreground"
     },
     {
       name: "Instagram",
       icon: Instagram,
-      href: "https://instagram.com/palaksh_kumar",
+      href: "https://www.Instagram.com/palakshkumar_",
       label: "Follow me",
       color: "text-pink-400"
     }
