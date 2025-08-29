@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Rocket, Send, Download } from "lucide-react";
-import heroProfileImage from "@/assets/profile.jpg";
+import heroProfileImage from "@/assets/profile1.jpg";
 
 const Hero = () => {
   const [mounted, setMounted] = useState(false);
