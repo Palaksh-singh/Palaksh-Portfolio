@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="text-center">
           <div className="mb-8">
             <h3 className="font-orbitron text-2xl md:text-3xl font-bold text-foreground mb-4">
-              NEON<span className="text-primary drop-shadow-[0_0_10px_hsl(var(--primary)/0.7)]">DEV</span>
+              Palaksh<span className="text-primary drop-shadow-[0_0_10px_hsl(var(--primary)/0.7)]">.dev</span>
             </h3>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               Connecting Ideas, Crafting Code and Creating digital experiences

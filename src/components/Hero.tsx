@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Rocket, Send } from "lucide-react";
+import { Rocket, Send, Download } from "lucide-react";
 import heroProfileImage from "@/assets/profile.jpg";
 
 const Hero = () => {
@@ -79,6 +79,19 @@ const Hero = () => {
                   <Rocket className="w-5 h-5" />
                   View Projects
                 </div>
+              </Button>
+              
+              <Button
+                asChild
+                className="group relative bg-secondary text-secondary-foreground font-bold text-lg px-8 py-6 neon-glow hover:neon-glow-hover transform hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+              >
+                <a href="/resume.pdf" download="Palaksh_Kumar_Resume.pdf">
+                  <div className="absolute inset-0 bg-gradient-to-r from-secondary to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="relative flex items-center gap-2">
+                    <Download className="w-5 h-5" />
+                    Download CV
+                  </div>
+                </a>
               </Button>
               
               <Button
