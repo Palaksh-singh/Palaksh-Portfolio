@@ -2,31 +2,44 @@ const Skills = () => {
   const skillCategories = [
     {
       title: "Frontend Development",
-      skills: ["HTML", "CSS", "JavaScript", "React"],
+      skills: ["HTML", "CSS", "JavaScript", "React", "Streamlit"],
       icon: "🎨",
     },
     {
       title: "Backend Development", 
-      skills: ["Node.js", "Express"],
+      skills: ["Node.js", "Express", "Python", "Flask"],
       icon: "⚙️",
     },
     {
+      title: "Machine Learning & AI",
+      skills: ["TensorFlow", "Keras", "Scikit-learn", "Pandas", "NumPy", "Deep Learning"],
+      icon: "🤖",
+    },
+    {
+      title: "Data Science & Visualization",
+      skills: ["Matplotlib", "Folium", "Geospatial Analysis", "Data Pipeline", "Jupyter"],
+      icon: "📊",
+    },
+    {
       title: "Databases",
-      skills: ["MongoDB", "SQL"],
+      skills: ["MongoDB", "SQL", "PostgreSQL"],
       icon: "🗃️",
     },
     {
       title: "Programming Languages",
-      skills: ["Java (DSA intermediate)", "Python (basic)", "C", "C++"],
+      skills: ["Python (Advanced)", "JavaScript", "Java (DSA intermediate)", "C", "C++"],
       icon: "👨‍💻",
     },
   ];
 
   const coreStrengths = [
+    "Machine Learning",
+    "Data Visualization", 
     "Problem-solving",
-    "Clean code practices", 
-    "Responsive design",
-    "Scalability",
+    "Clean code practices",
+    "Geospatial Analysis",
+    "Model Development",
+    "End-to-end Pipelines",
   ];
 
   return (
@@ -76,7 +89,7 @@ const Skills = () => {
             Core Strengths
           </h3>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {coreStrengths.map((strength, index) => (
               <div
                 key={strength}
