@@ -1,4 +1,8 @@
+import { useState } from "react";
+import { ChevronDown, ChevronUp } from "lucide-react";
+
 const About = () => {
+  const [showEducationDetails, setShowEducationDetails] = useState(false);
   return (
     <section id="about" className="py-20 lg:py-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -25,7 +29,23 @@ const About = () => {
           </div>
 
           <div className="bg-card/50 p-8 rounded-2xl border border-primary/20 neon-glow">
-            <h3 className="font-orbitron text-xl font-bold text-foreground mb-4">Education</h3>
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="font-orbitron text-xl font-bold text-foreground">Education</h3>
+              <button
+                onClick={() => setShowEducationDetails(!showEducationDetails)}
+                className="flex items-center gap-2 text-primary hover:text-accent transition-colors duration-300 group"
+              >
+                <span className="text-sm font-medium">
+                  {showEducationDetails ? "Less Details" : "More Details"}
+                </span>
+                {showEducationDetails ? (
+                  <ChevronUp className="w-4 h-4 transition-transform duration-300 group-hover:scale-110" />
+                ) : (
+                  <ChevronDown className="w-4 h-4 transition-transform duration-300 group-hover:scale-110" />
+                )}
+              </button>
+            </div>
+            
             <div className="space-y-4">
               <div>
                 <h4 className="font-semibold text-primary">B.Tech in Computer Science and Engineering</h4>
@@ -33,6 +53,22 @@ const About = () => {
                 <p className="text-muted-foreground">VIT-AP University</p>
                 <p className="text-sm text-muted-foreground">Expected Graduation: 2027</p>
               </div>
+              
+              {showEducationDetails && (
+                <div className="space-y-4 animate-fade-in border-t border-primary/20 pt-4">
+                  <div>
+                    <h4 className="font-semibold text-primary">Class XII (Senior Secondary)</h4>
+                    <p className="text-muted-foreground">Guru Gobind Singh Public School, Bokaro, Jharkhand</p>
+                    <p className="text-accent font-medium">Score: 89%</p>
+                  </div>
+                  
+                  <div>
+                    <h4 className="font-semibold text-primary">Class X (Secondary)</h4>
+                    <p className="text-muted-foreground">Guru Gobind Singh Public School, Bokaro, Jharkhand</p>
+                    <p className="text-accent font-medium">Score: 93%</p>
+                  </div>
+                </div>
+              )}
             </div>
             
             <div className="mt-6 pt-6 border-t border-primary/20">
