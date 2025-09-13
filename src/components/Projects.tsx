@@ -87,6 +87,65 @@ const Projects = () => {
             </CardContent>
           </Card>
 
+          {/* Better Care Mental Health Tracker */}
+          <Card className="group hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 bg-card/50 border-primary/20 neon-glow">
+            <div className="relative overflow-hidden rounded-t-lg">
+              <img 
+                src="/lovable-uploads/better-care-screenshot.png" 
+                alt="Better Care Mental Health Tracker App"
+                className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
+            </div>
+            
+            <CardHeader>
+              <div className="flex items-center gap-2 mb-2">
+                <TrendingUp className="w-5 h-5 text-primary" />
+                <Badge variant="secondary" className="text-xs">Web App</Badge>
+              </div>
+              <CardTitle className="font-orbitron text-xl group-hover:text-primary transition-colors">
+                🧠 Better Care — Mental Health Tracker
+              </CardTitle>
+              <CardDescription>
+                A responsive web application designed to help users track their daily mood and mental wellbeing, enabling insights into long-term emotional patterns.
+              </CardDescription>
+            </CardHeader>
+            
+            <CardContent>
+              <div className="space-y-4">
+                <div className="grid grid-cols-1 gap-3 text-sm">
+                  <div className="flex items-center gap-2">
+                    <Database className="w-4 h-4 text-accent" />
+                    <span>User Authentication & Personalized Tracking</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <TrendingUp className="w-4 h-4 text-accent" />
+                    <span>Interactive Charts & Data Visualizations</span>
+                  </div>
+                </div>
+                
+                <div className="flex flex-wrap gap-2">
+                  {["React", "Next.js", "Vercel", "Responsive UI", "Charts"].map((tech) => (
+                    <Badge key={tech} variant="outline" className="text-xs border-primary/30">
+                      {tech}
+                    </Badge>
+                  ))}
+                </div>
+                
+                <div className="flex gap-3 pt-4">
+                  <Button
+                    size="sm"
+                    className="flex-1"
+                    onClick={() => window.open("https://better-care-psi.vercel.app/", "_blank")}
+                  >
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    Live Demo
+                  </Button>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
           {/* Placeholder for future projects */}
           <Card className="group hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 bg-card/20 border-primary/20 border-dashed">
             <CardContent className="flex flex-col items-center justify-center h-full min-h-[400px] text-center p-8">

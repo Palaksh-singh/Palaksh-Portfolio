@@ -82,16 +82,14 @@ const Hero = () => {
               </Button>
               
               <Button
-                asChild
+                onClick={() => window.open("https://drive.google.com/file/d/10Y4L29FK7vpGNIfpoyDxJZ4heXAY66aq/view?usp=sharing", "_blank")}
                 className="group relative bg-secondary text-secondary-foreground font-bold text-lg px-8 py-6 neon-glow hover:neon-glow-hover transform hover:-translate-y-1 transition-all duration-300 overflow-hidden"
               >
-                <a href="/resume.pdf" download="Palaksh_Kumar_Resume.pdf">
-                  <div className="absolute inset-0 bg-gradient-to-r from-secondary to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <div className="relative flex items-center gap-2">
-                    <Download className="w-5 h-5" />
-                    Download CV
-                  </div>
-                </a>
+                <div className="absolute inset-0 bg-gradient-to-r from-secondary to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="relative flex items-center gap-2">
+                  <Download className="w-5 h-5" />
+                  Resume
+                </div>
               </Button>
               
               <Button
