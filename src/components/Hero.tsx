@@ -54,19 +54,40 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Hero Text */}
-          <div className="order-2 lg:order-1 text-center lg:text-left">
-            <h1 className="font-orbitron text-4xl md:text-5xl lg:text-6xl font-bold text-gradient mb-6 leading-tight">
-              CODE THE FUTURE
-            </h1>
-            <h2 className="font-orbitron text-xl md:text-2xl lg:text-3xl font-normal text-muted-foreground mb-12">
-              Welcome to My Portfolio
-            </h2>
-            
-            <div className="mb-10 text-left">
-              <div className="font-orbitron text-4xl md:text-5xl lg:text-6xl font-bold text-gradient leading-tight hover:scale-105 transition-transform duration-300 cursor-default">
-                <div>PALAKSH</div>
-                <div>KUMAR</div>
+          <div className="order-2 lg:order-1 text-center lg:text-left space-y-8">
+            {/* Main Hero Text */}
+            <div className="space-y-4">
+              <div className="overflow-hidden">
+                <h1 className="font-orbitron text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-none animate-fade-in">
+                  <span className="block text-gradient hover:scale-105 transition-transform duration-500 cursor-default">
+                    PALAKSH
+                  </span>
+                  <span className="block text-gradient hover:scale-105 transition-transform duration-500 cursor-default" style={{ animationDelay: '0.2s' }}>
+                    KUMAR
+                  </span>
+                </h1>
               </div>
+              
+              <div className="space-y-2">
+                <div className="overflow-hidden">
+                  <p className="font-orbitron text-lg md:text-xl lg:text-2xl text-accent font-medium animate-fade-in" style={{ animationDelay: '0.4s' }}>
+                    Full Stack Developer & AI Enthusiast
+                  </p>
+                </div>
+                <div className="overflow-hidden">
+                  <p className="font-orbitron text-base md:text-lg text-muted-foreground animate-fade-in" style={{ animationDelay: '0.6s' }}>
+                    Crafting Digital Experiences • Building Tomorrow's Solutions
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Call to Action Message */}
+            <div className="overflow-hidden">
+              <p className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed animate-fade-in" style={{ animationDelay: '0.8s' }}>
+                Transforming ideas into powerful web applications with modern technologies, 
+                machine learning expertise, and a passion for clean, scalable code.
+              </p>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
