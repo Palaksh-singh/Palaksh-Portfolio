@@ -58,13 +58,15 @@ const Hero = () => {
             <h1 className="font-orbitron text-4xl md:text-5xl lg:text-6xl font-bold text-gradient mb-6 leading-tight">
               CODE THE FUTURE
             </h1>
-            <h2 className="font-orbitron text-xl md:text-2xl lg:text-3xl font-normal text-muted-foreground mb-8">
+            <h2 className="font-orbitron text-xl md:text-2xl lg:text-3xl font-normal text-muted-foreground mb-12">
               Welcome to My Portfolio
             </h2>
-            <div className="mb-10">
-              <h3 className="font-orbitron text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gradient hover:scale-105 transition-transform duration-300 cursor-default">
-                PALAKSH KUMAR
-              </h3>
+            
+            <div className="mb-10 text-left">
+              <div className="font-orbitron text-4xl md:text-5xl lg:text-6xl font-bold text-gradient leading-tight hover:scale-105 transition-transform duration-300 cursor-default">
+                <div>PALAKSH</div>
+                <div>KUMAR</div>
+              </div>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
