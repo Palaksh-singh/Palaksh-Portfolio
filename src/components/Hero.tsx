@@ -61,13 +61,11 @@ const Hero = () => {
             <h2 className="font-orbitron text-xl md:text-2xl lg:text-3xl font-normal text-muted-foreground mb-8">
               Welcome to My Portfolio
             </h2>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed">
-              I am a passionate web developer with a strong foundation in building modern,
-              responsive, and user-friendly websites. Alongside my web development skills,
-              I have hands-on experience with Data Structures and Algorithms in Java up to
-              an intermediate level, which enhances my problem-solving ability and logical thinking.
-              I aim to deliver clean, efficient, and scalable solutions that combine creativity with technical precision.
-            </p>
+            <div className="mb-10">
+              <h3 className="font-orbitron text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gradient hover:scale-105 transition-transform duration-300 cursor-default">
+                PALAKSH KUMAR
+              </h3>
+            </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button

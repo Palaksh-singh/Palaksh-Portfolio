@@ -146,20 +146,6 @@ const Projects = () => {
             </CardContent>
           </Card>
 
-          {/* Placeholder for future projects */}
-          <Card className="group hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 bg-card/20 border-primary/20 border-dashed">
-            <CardContent className="flex flex-col items-center justify-center h-full min-h-[400px] text-center p-8">
-              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-6">
-                <TrendingUp className="w-8 h-8 text-primary" />
-              </div>
-              <h3 className="font-orbitron text-xl font-bold text-foreground mb-4">
-                More Projects Coming Soon
-              </h3>
-              <p className="text-muted-foreground">
-                I'm constantly working on new projects to showcase different aspects of my expertise.
-              </p>
-            </CardContent>
-          </Card>
         </div>
       </div>
     </section>
